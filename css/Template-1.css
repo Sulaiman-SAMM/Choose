@@ -1,0 +1,75 @@
+/* start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:root {
+    --main-purple-color: #5c48f1;
+    --elements-background-color: #eeecfd;
+    --element-border-color: #e0e0e1;
+    --sacen-main-color: #eeeeeebe;
+  }
+  body {
+    font-family: 'Work Sans', sans-serif;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    background-color: var(--sacen-main-color);
+  }
+/* End Global Rules */
+/* Start container */
+.container {
+    background-color: #5c48f154;
+    color: var(--main-purple-color);
+    font-weight: normal;
+    text-align: center;
+    padding: 30px;
+    margin-top: 100px;
+    border-radius: 12px;
+}
+/* End container */
+/* Start Form */
+form {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+}
+form input {
+    width: 30px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+    accent-color: var(--main-purple-color);
+}
+form .box {
+    border: 3px solid var(--element-border-color);
+    margin-top: 15px;
+    height: 150px;
+    position: relative;
+    border-radius: 6px;
+    height: 170px;
+}
+form .box:hover {
+    content: "";
+    background-color: #5c48f12a;
+    border-color: var(--main-purple-color);
+    accent-color: black;
+}
+form .box i {
+    position: absolute;
+    font-size: 60px;
+    color: var(--main-purple-color);
+    top: 15%;
+    left: 35%;
+}
+form .box  p {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    font-weight: bold;
+}
+/* End Form */
